@@ -1,0 +1,87 @@
+.container-fluid{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+.form_1{
+    border: 2px solid rgb(102, 93, 93);
+    
+}
+.form_1 .row{
+    padding: 10px;
+}
+.form_2{
+    border: 2px solid black;
+    
+    margin-top: 30px;
+}
+.form_2 .row{
+    padding: 10px;
+}
+.divider{
+    height: 1px;
+    background-color: rgb(74, 65, 65);
+   margin-left: 60px;
+   margin-right: 60px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+ .col-sm-4 .form-check{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 20px;
+    text-align: justify;
+}
+.col-sm-4 .form-check .form-check-input{
+  margin-left: 20px;
+  color: red;
+}
+.gachmong{
+    height: 0.5px;
+    background-color: rgb(50, 55, 59);
+    margin-left: 33px;
+    margin-right: 183px;
+    margin-bottom: 20px;
+}
+.list{
+    margin-top: 30px;
+}
+
+.navbar .nav-link>ul{
+    margin-left: 90px;
+}
+.navbar-nav .nav-link:hover{
+    color: chartreuse;
+}
+
+.row .col-sm-2 >ul{
+    list-style-type: none;
+}
+.row .col-sm-3>ul{
+    list-style-type: none;
+}
+#footer-row{
+    background-color: rgb(70, 70, 245);
+    margin-top: 40px;
+}
+.gachduoi{
+    height: 1px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.input-group .btn{
+    background-color: rgb(14, 61, 61);
+}
+.input-group .btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+.navbar .nav-item{
+    position: relative;
+    left: 116px;
+}
+
+.image{
+    height: 20px;
+}
+

@@ -1,0 +1,14 @@
+thead th{
+    text-align: center !important;
+    vertical-align: middle !important;
+    background-color: lightgoldenrodyellow;
+}
+.container .panel{
+    border: 1px;
+   background-color: lightgoldenrodyellow;
+   margin-top: 20px;
+}
+.tab-content .btn{
+    margin-top: 50px;
+    margin-left: 30px;
+}
