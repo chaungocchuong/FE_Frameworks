@@ -6,6 +6,6 @@ app.controller('controller_demo', function($scope){
     age: "19",
     method: "dep trai vl",
     address: "thon tinh son, tam my tay, nui thanh, quang nam",
-    major: "information technology"
+    major: "IT"
   }
 })
