@@ -1,6 +1,4 @@
- .row .col-sm-5 .image{
-    margin-top: 20px;
-}
+
 #header ul {
     margin-top: 150px;
 }
@@ -24,12 +22,18 @@
 .img-panel{
     height: 80px;
 }
-.col-sm-3 .panel .row{
-    margin-top: 20px;
-    border: 1px solid rgb(93, 90, 90);
+.panel-body .row{
+    margin: 30px;
+   border: 1px solid rgb(116, 106, 106);
+    border-radius: 10px 10px 10px 10px;
 }
-
 .col-sm-3 .panel .row ul{
     list-style-type: none;
 }
+.image-caroucel{
+width: auto;
+height: 800px;
+margin-top: 30px;
+}
+
 

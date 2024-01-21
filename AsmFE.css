@@ -20,3 +20,7 @@ body{
 .img-card{
     height: 180px;
 }
+.card-body .btn:hover{
+    background-color: rgb(217, 117, 221);
+   
+}
