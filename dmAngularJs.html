@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body class="container" ng-app="demoapp">
+    <form ng-controller="Ctrl">
+
+        <div class="mb-3 form-check">
+            <input ng-Click="Check()" type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button ng-Click="handeSubmit()" type="submit" class="btn btn-primary">Submit</button>
+        <div ng-show="CheckmeOut" class="form-check">
+            <input ng-model="radio" value="1" class="form-check-input" type="radio" name="flexRadioDefault"
+                id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                ATM
+            </label>
+        </div>
+        <div ng-show="CheckmeOut" class="form-check">
+            <input ng-model="radio" value="2" class="form-check-input" type="radio" name="flexRadioDefault"
+                id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                MASTER CAR
+            </label>
+        </div>
+        <div ng-switch="radio">
+            <div class="mb-3" ng-switch-when="1">
+                <label for="exampleInputEmail1" class="form-label">STK</label>
+                <input ng-model="Email" ng-model-options="{debounce: '2000'}" type="text" class="form-control"
+                    id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3" ng-switch-when="1">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input ng-model="Password" type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+
+        
+            <div class="mb-3" ng-switch-when="2">
+                <label for="exampleInputEmail1" class="form-label">STK</label>
+                <input ng-model="Email" ng-model-options="{debounce: '2000'}" type="text" class="form-control"
+                    id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3" ng-switch-when="2">
+                <label for="exampleInputPassword1" class="form-label">Nơi cấp</label>
+                <input ng-model="Password" type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3" ng-switch-when="2">
+                <label for="exampleInputPassword1" class="form-label">Họ tên người sở hữu</label>
+                <input ng-model="Password" type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3" ng-switch-when="2">
+                <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                <select id="disabledSelect" class="form-select">
+                    <option ng-repeat="var in questions">{{var.key}}</option>
+                </select>
+                <label for="">câu hỏi xác thực</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+        </div>
+    </form>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="dmAgularJS.js"></script>
+</body>
+
+</html>

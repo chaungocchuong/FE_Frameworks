@@ -1,14 +1,35 @@
 var app =angular.module('demoapp', [])
 
-app.controller('Ctrl', function($scope, $rootScope)
+app.controller('Ctrl', function($scope, )
 {
-   $scope.Show = function()
-   {
-    $scope.Fullname =  $scope.First + " " + $scope.Last
-   }
-})
+  var Checkme = false
+  $scope.Check= function()
+  {
+    $scope.CheckmeOut = !$scope.Checkme
+  }
 
-app.controller('Ctrl2', function ($scope)
-{
- 
-})
+
+  $scope.questions = [
+    {
+      key: "Người mà bạn ấn tượng nhất tên là gì?",
+    },
+    {
+      key: "Mẹ bạn tên gì?",
+    },
+    {
+      key: "Bạn Sống ở đâu?",
+    },
+    {
+      key: "Bạn học trường nào?",
+    },
+    {
+      key: "Hôm nay bạn thế nào?",
+    },
+  ];
+
+
+
+
+});
+
+

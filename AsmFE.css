@@ -20,7 +20,101 @@ body{
 .img-card{
     height: 180px;
 }
-.card-body .btn:hover{
-    background-color: rgb(217, 117, 221);
-   
+
+.navbar-toggler {
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin: 25px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(120deg, transparent, #00fffc, transparent);
+    transition: background 0.6s, box-shadow 0.6s;
+}
+
+.navbar-toggler::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #00fffc, transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+    position: absolute;
+}
+
+.navbar-toggler:hover::before {
+    transform: translateX(0);
+}
+
+.navbar-toggler:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 5px;
+}
+
+
+
+.butt {
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin: 25px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(120deg, transparent, #e429bf, transparent);
+    transition: background 0.6s, box-shadow 0.6s;
+}
+
+.butt::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #1feb0d, transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+    position: absolute;
+}
+
+.butt:hover::before {
+    transform: translateX(0);
+}
+
+.butt:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 5px rgb(212, 131, 216);
+}
+
+.loading{
+    color: rgb(35, 186, 237);
+    animation: skeleton 1.5s linear infinite alternate;
+    font-family: 'Times New Roman', Times, serif;
+}
+@keyframes skeleton{
+    0%{
+        color: rgb(32, 223, 223);
+    }
+    100%{
+        color: rgb(205, 86, 211);
+    }
+}
+
+.card{
+    transition-property:transform, box-shadow;
+   transition-duration: 0.2s;
+}
+.card:hover{
+    
+    box-shadow: 0 0 15px 5px rgb(73, 236, 165);
+    transform: scale(1.1);
 }
